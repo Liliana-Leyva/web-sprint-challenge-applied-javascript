@@ -1,0 +1,16 @@
+1. What is the DOM?
+Is a tree-like representation of the contents of a webpage. A tree of nodes with different relationships depending on how they’re arranged in the HTML document.
+
+2. What is an event?
+It is every user interaction with a site like scrolling the page, a click, zoom. When an event happens it is known as a trigger. 
+
+3. What is an event listener?
+
+It is a function in javascript that tells the element what event is going to take place, it allow us to 
+add interactive functionality to the HTML elements.
+
+4. Why would we convert a NodeList into an Array?
+To iterate over it and be able to apply methods like  map(), slice(), and filter() to get useful information.
+
+5. What is a component?
+Are independent and reusable pieces of code.

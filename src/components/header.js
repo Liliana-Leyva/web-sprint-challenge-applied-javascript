@@ -38,17 +38,17 @@ return headerElement;
 }
 
 
-const headerAppender = (selector) => {
-  // TASK 2
-  // ---------------------
-  // Implement this function taking a css selector as its only argument.
-  // It should create a header using the Header component above, passing arguments of your choosing.
-  // It should append the header to the element in the DOM that matches the given selector.
-  //
-    const headerContainer = document.querySelector(selector);
-    headerContainer.appendChild((Header("America", "2021", "45")))
+// const headerAppender = (selector) => {
+//   // TASK 2
+//   // ---------------------
+//   // Implement this function taking a css selector as its only argument.
+//   // It should create a header using the Header component above, passing arguments of your choosing.
+//   // It should append the header to the element in the DOM that matches the given selector.
+//   //
+//     const headerContainer = document.querySelector(selector);
+//     headerContainer.appendChild((Header("America", "2021", "45")))
     
-   return headerContainer
-}
-console.log(headerAppender(".header-container"))
-export { Header, headerAppender }
+//    return headerContainer
+// }
+// console.log(headerAppender(".header-container"))
+// export { Header, headerAppender }

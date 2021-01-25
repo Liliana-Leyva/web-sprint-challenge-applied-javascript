@@ -47,7 +47,7 @@
 //   // It should append the header to the element in the DOM that matches the given selector.
 //   //
     const headerContainer = document.querySelector(selector);
-    headerContainer.appendChild(Header("America", "2021", "45"))
+    headerContainer.appendChild(Header("Good Morning America", "2021", "45F"))
     
 }
 

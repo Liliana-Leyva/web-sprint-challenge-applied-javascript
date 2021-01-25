@@ -19,11 +19,19 @@ const Tabs = (topics) => {
     
     const topicsDiv = document.createElement('div');
     topicsDiv.classList.add("topics")
-     topicsDiv.forEach(element =>{
-      element = document.createElement('div');
-      element.classList.add("tab");
-      element.textContent = topics;
-     })
+
+    topics.forEach(item => {
+      item.document.createElement('div');
+      item.classList.add('tab');
+      topicsDiv.appendChild(item);
+
+    })
+    //  topics.forEach(element =>{
+    //   element = document.createElement('div');
+    //   element.classList.add("tab");
+    //   element.textContent = topics;
+    //  })
+    
     return topicsDiv;
 
 
@@ -42,8 +50,8 @@ const tabsAppender = (selector) => {
   //
 
   const arrays = axios.get('https://lambda-times-api.herokuapp.com/topics')
-  arrays.forEach((element)=>{
-    entryTopics.appendChild(Tabs("tabs-container"));
+  arrays.forEach((selector)=>{
+    entryTopics.appendChild(Tabs(".tabs-container"));
   })
 }
 

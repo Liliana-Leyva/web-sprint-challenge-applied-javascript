@@ -26,11 +26,7 @@ const Tabs = (topics) => {
       topicsDiv.appendChild(item);
 
     })
-    //  topics.forEach(element =>{
-    //   element = document.createElement('div');
-    //   element.classList.add("tab");
-    //   element.textContent = topics;
-    //  })
+    
     
     return topicsDiv;
 

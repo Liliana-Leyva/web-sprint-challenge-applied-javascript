@@ -15,28 +15,23 @@ const Tabs = (topics) => {
   //   <div class="tab">technology</div>
   // </div>
   //
-  //creating elements
-  // const topicsDiv = document.createElement('div');
-  // const js = document.createElement('div');
-  // const bStrap = document.createElement('div');
-  // const tech = document.createElement('div');
-
   
-   
- 
+    
     const topicsDiv = document.createElement('div');
-    topicsDiv.classList.add("topics");
-    topicsDiv.textContent = `${topics}` 
+    topicsDiv.classList.add("topics")
+     topicsDiv.forEach(element =>{
+      element = document.createElement('div');
+      element.classList.add("tab");
+      element.textContent = topics;
+     })
     return topicsDiv;
-  
-  
-
 
 
 
    
 }
 const entryTopics = document.querySelector(".topics")
+
 const tabsAppender = (selector) => {
   // TASK 4
   // ---------------------
@@ -47,10 +42,8 @@ const tabsAppender = (selector) => {
   //
 
   const arrays = axios.get('https://lambda-times-api.herokuapp.com/topics')
-  .then((res) => {
-    res.arrays.topics.forEach(element =>{
-      Tabs.appendChild(selector)
-    })
+  arrays.forEach((element)=>{
+    entryTopics.appendChild(Tabs("tabs-container"));
   })
 }
 
